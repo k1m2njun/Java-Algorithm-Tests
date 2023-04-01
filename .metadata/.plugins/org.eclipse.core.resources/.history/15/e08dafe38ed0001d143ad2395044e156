@@ -12,6 +12,6 @@ public class Main {
 		int y = scanner.nextInt();
 		
 		System.out.println(x+y);
-		 
+		
 	}
 }
