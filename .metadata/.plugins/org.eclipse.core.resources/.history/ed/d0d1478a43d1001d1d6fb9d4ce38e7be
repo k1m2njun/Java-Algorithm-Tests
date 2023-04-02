@@ -1,0 +1,22 @@
+package boj2588;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		int a = scanner.nextInt();
+		String b = scanner.next();
+		scanner.close();
+		int sum = 0;
+		
+		for(int i = b.length()-1; i >= 0; i--) {
+			sum += ((int)(b.charAt(i)-48) * a) * Math.pow(10, i);
+			System.out.println((int)(b.charAt(i)-48) * a);
+		}
+		System.out.println(sum);
+	}
+
+}
