@@ -1,0 +1,22 @@
+package boj1024;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();
+		int l = scanner.nextInt();
+		scanner.close();
+		
+		while(true) {
+			for(int i = n; i > 0; i--) {
+				
+			}
+		}
+		
+	}
+
+}

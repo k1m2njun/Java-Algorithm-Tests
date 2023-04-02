@@ -9,6 +9,7 @@ public class Main {
 		Scanner scanner = new Scanner(System.in);
 		
 		String s = scanner.nextLine();
+		scanner.close();
 		int count = 0;
 		
 		for(int i = 0; i < s.length(); i++) {

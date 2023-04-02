@@ -10,6 +10,7 @@ public class Main {
 		
 		int t = scanner.nextInt();
 		
+		
 		for(int i = 0; i < t; i++) {
 			int r = scanner.nextInt();
 			String s = scanner.next();
@@ -21,5 +22,6 @@ public class Main {
 			}
 			System.out.println();
 		}
+		scanner.close();
 	}
 }
