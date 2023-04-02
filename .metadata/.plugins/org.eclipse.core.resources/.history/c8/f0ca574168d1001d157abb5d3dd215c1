@@ -1,0 +1,21 @@
+package boj02884;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		int h = scanner.nextInt();
+		int m = scanner.nextInt();
+		scanner.close();
+		
+		int minute = h*60 + m - 45;
+		if(minute < 0) {
+			System.out.println(((1440 + minute)/60) + " " + (minute + 60));
+		} else {
+			System.out.println((minute/60) + " " + (m + 15));
+		}
+	}
+}

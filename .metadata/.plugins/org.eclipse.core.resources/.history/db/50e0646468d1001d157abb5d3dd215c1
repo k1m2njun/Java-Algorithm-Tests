@@ -1,0 +1,18 @@
+package boj02884;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		int h = scanner.nextInt();
+		int m = scanner.nextInt();
+		scanner.close();
+		
+		int resultH = (h * 60 + m + 1395)/60;
+		int resultM = m + 15;
+		System.out.println(resultH + " " + resultM);
+	}
+}
