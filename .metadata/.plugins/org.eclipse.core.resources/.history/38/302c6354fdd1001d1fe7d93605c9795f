@@ -1,0 +1,26 @@
+package boj25304;
+
+import java.util.Scanner;
+
+class Bill {
+	int price;
+	int amount;
+	
+	public Bill(int price, int amount) {
+		this.price = price;
+		this.amount = amount;
+		
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		int x = scanner.nextInt();
+		int n = scanner.nextInt();
+		
+	}
+
+}

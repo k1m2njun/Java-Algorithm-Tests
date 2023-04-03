@@ -1,0 +1,34 @@
+package boj25304;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Bill {
+	int price;
+	int amount;
+	
+	public Bill(int price, int amount) {
+		this.price = price;
+		this.amount = amount;
+		
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		int x = scanner.nextInt();
+		int n = scanner.nextInt();
+		
+		ArrayList<Bill> arr = new ArrayList<>();
+		for(int i = 0; i < n; i++) {
+			int a = scanner.nextInt();
+			int b = scanner.nextInt();
+			arr.add(new Bill(a, b));
+		}
+		
+	}
+
+}

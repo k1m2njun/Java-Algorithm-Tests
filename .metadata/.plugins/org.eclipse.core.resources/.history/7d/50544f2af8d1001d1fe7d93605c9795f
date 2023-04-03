@@ -1,0 +1,32 @@
+package boj02480;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		int[] arr;
+		int d;
+		int e;
+		
+		for(int i = 0; i < 3; i++) {
+			arr[i] = scanner.nextInt();
+		}
+		scanner.close();
+		
+		for(int i = 0; i < arr.length; i++) {
+			if ((arr[i] == arr[i-2]) && (arr[i] == arr[i-1])) {
+				e = 10000 + arr[i] * 1000;
+			} else if((arr[i] != arr[i-2]) && (arr[i-2] != arr[i-1]) && (arr[i] != arr[i-1])) {
+				Array.sort(arr);
+				
+	            e = arr[2] * 100;
+			}
+				
+				
+		}
+		
+	}
+}

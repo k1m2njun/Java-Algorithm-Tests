@@ -1,0 +1,48 @@
+package boj25304;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+class Bill {
+	int price;
+	int amount;
+	
+	public Bill(int price, int amount) {
+		this.price = price;
+		this.amount = amount;
+		
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		int x = scanner.nextInt();
+		int n = scanner.nextInt();
+		
+		int sum = 0;
+		
+		ArrayList<Bill> arr = new ArrayList<>();
+		for(int i = 0; i < n; i++) {
+			int a = scanner.nextInt();
+			int b = scanner.nextInt();
+			arr.add(new Bill(a, b));
+		}
+		
+		for(int i = 0; i < n; i++) {
+			sum += arr.get(i).amount * arr.get(i).price; 
+		}
+		
+		System.out.println((x==sum) ? "Yes" : "No");
+		
+//		if(x==sum) {
+//			System.out.println("Yes");
+//		} else {
+//			System.out.println("No");
+//		}
+		
+	}
+
+}
