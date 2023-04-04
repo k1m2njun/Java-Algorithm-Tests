@@ -38,6 +38,12 @@ public class Main {
 		
 		System.out.println((x==sum) ? "Yes" : "No");
 		
+//		if(x==sum) {
+//			System.out.println("Yes");
+//		} else {
+//			System.out.println("No");
+//		}
+		
 	}
 
 }
