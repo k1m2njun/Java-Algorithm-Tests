@@ -1,0 +1,29 @@
+package boj05622;
+
+import java.util.ArrayList;
+
+class Phone {
+	int num;
+	String c;
+	
+	public Phone(int num, String c) {
+		this.num = num;
+		this.c = c;
+	}
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		int[] arr = new int[10];
+		for(int i = 0; i < arr.length; i++) {
+			arr[i] = 
+		}
+		
+		ArrayList<> arrList = new ArrayList<>();
+
+	}
+
+}
