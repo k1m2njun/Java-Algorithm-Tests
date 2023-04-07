@@ -1,0 +1,18 @@
+package boj10951;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+        Scanner scanner = new Scanner(System.in);
+        String s = "";
+        while(s != null) {
+        	s = scanner.nextLine();
+        	int a = scanner.nextInt();
+        	int b = scanner.nextInt();
+        	System.out.println(a + b);
+        }
+	}
+}
