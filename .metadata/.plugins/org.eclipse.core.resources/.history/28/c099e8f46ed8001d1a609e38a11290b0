@@ -1,0 +1,47 @@
+package boj01157;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		String s = scanner.next();
+		scanner.close();
+		
+		String sC = "";
+		
+		// toUpperCase
+		for(int i = 0; i < s.length(); i++) {
+			if(s.charAt(i) >= 97 && s.charAt(i) <= 122) {
+				sC += s.charAt(i) - 32;
+			} else {
+				sC += s.charAt(i);
+			}
+		}
+		
+		char c = sC.charAt(0);
+		int count;
+		int temp = 0;
+		
+		for(int i = 0; i < sC.length(); i++) {
+			count = 0;
+			for(int j = 1; j < sC.length(); j++) {
+				
+				if(s.charAt(i)==sC.charAt(j)) {
+					count++;
+				}
+			}
+			if(count > temp) {
+				c = sC.charAt(i);
+			} else if(count == temp) {
+				System.out.println("?");
+				return;
+			}
+		}
+		
+		System.out.println(c);
+	}
+
+}

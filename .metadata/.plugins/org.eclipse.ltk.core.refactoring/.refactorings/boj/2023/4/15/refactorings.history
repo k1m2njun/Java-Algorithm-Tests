@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;boj01157&apos; to &apos;boj01157_hw&apos;&#x0A;- Original project: &apos;boj&apos;&#x0A;- Original element: &apos;boj/src/boj01157&apos;&#x0A;- Renamed element: &apos;boj/src/boj01157_hw&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;boj01157&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;boj01157" name="boj01157_hw" qualified="false" references="true" stamp="1681223525220" textual="false" version="1.0"/>
+</session>
